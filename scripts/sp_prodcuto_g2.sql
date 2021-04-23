@@ -110,8 +110,7 @@ begin
    		'secuencial' = pr_secuencial,
 		'codigo' 	= pr_codigo,
 		'nombre' 	= pr_nombre,
-		'precio'	= pr_precio,
-		'estado'	= pr_estado
+		'precio'	= pr_precio
 	from producto_grupo2
 	where pr_estado = 'V'
 end
@@ -127,8 +126,7 @@ begin
 		'secuencial' 	= pr_secuencial,
 		'codigo' 	 	= pr_codigo,
 		'nombre' 		= pr_nombre,
-		'precio'		= pr_precio,
-		'estado'		= pr_estado
+		'precio'		= pr_precio
 	from producto_grupo2
 	where pr_codigo like '%'+@i_codigo+'%'
 end
