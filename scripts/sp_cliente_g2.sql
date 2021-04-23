@@ -119,8 +119,7 @@ begin
 		'nombre' 	= cl_nombre,
 		'apellido' 	= cl_apellido,
 		'direccion' = cl_direccion,
-		'telefono' 	= cl_telefono,
-		'estado' 	= cl_estado
+		'telefono' 	= cl_telefono
 	from cliente_grupo2
 	where cl_estado = 'V'
 end
@@ -138,8 +137,7 @@ begin
 		'nombre' 	= cl_nombre,
 		'apellido' 	= cl_apellido,
 		'direccion' = cl_direccion,
-		'telefono' 	= cl_telefono,
-		'estado' 	= cl_estado
+		'telefono' 	= cl_telefono
 	from cliente_grupo2
 	where cl_nombre like '%'+@i_nombre+'%'
 end
