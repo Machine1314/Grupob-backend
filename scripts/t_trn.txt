@@ -1,0 +1,7 @@
+cliente
+pd_procedure: 172266 (id del procedure creado)
+trn:		163030012
+
+producto
+pd_procedure: 172267 (id del procedure creado)
+trn:		163030013
