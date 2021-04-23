@@ -5,3 +5,10 @@ trn:		163030012
 producto
 pd_procedure: 172267 (id del procedure creado)
 trn:		163030013
+
+factura
+procedure:	172286(id del procedure creado)
+trn: 		163030024
+Opciones: F, C
+F: Lista todas las facturas en un rango de fechas
+C: Lista todas las facturas segun la cedula
