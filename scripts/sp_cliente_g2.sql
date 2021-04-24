@@ -24,6 +24,7 @@ create procedure sp_cliente_g2
    @i_direccion				varchar(200)= null,
    @i_telefono				varchar(10) = null,
    @i_estado				char(1)		= 'V',
+   @i_codigo				varchar(10) = null,
    @o_codigo              	int      	= null out
 
 as
@@ -73,7 +74,7 @@ begin
 		 cl_apellido,	cl_direccion,	cl_telefono,
 		 cl_estado)
 	values 
-		(@w_codigo_cli,	@i_cedula,		@i_nombre,
+		(@i_codigo,	@i_cedula,		@i_nombre,
 		 @i_apellido,	@i_direccion,	@i_telefono,
 		 @i_estado)
 		
@@ -83,6 +84,13 @@ end
 
 if @i_operacion = 'U'
 begin
+ 	if @i_codigo is null
+    begin
+	--Poner el error correspondiente [quitar el null]
+      select @w_error =  null
+      goto ERROR_FIN
+	end
+
 	if exists (select cl_cedula from cliente_grupo2 where cl_cedula = @i_cedula)
 	begin
 		select @w_error = 1720372
@@ -95,7 +103,7 @@ begin
 		cl_apellido		= @i_apellido,
 		cl_direccion 	= @i_direccion,
 		cl_telefono 	= @i_telefono
-	where cl_codigo = @w_codigo_cli
+	where cl_codigo = @i_codigo
 
 end
 if @i_operacion = 'D'
