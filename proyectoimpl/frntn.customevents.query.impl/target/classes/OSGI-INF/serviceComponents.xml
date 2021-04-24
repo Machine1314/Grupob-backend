@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0">
+    <scr:component enabled="true" name="com.cobiscorp.cobis.frntn.customevents.impl.query.executequery.DatosFacturaQueryCedula_Q_DATOAUFS_NQ47">
+        <implementation class="com.cobiscorp.cobis.frntn.customevents.impl.query.executequery.DatosFacturaQueryCedula_Q_DATOAUFS_NQ47"/>
+        <service servicefactory="false">
+            <provide interface="com.cobiscorp.designer.api.customization.IExecuteQuery"/>
+        </service>
+        <property name="query.id" type="String" value="Q_DATOAUFS_NQ47"/>
+        <property name="query.version" type="String" value="1.0.0"/>
+        <property name="service.pid" value="com.cobiscorp.cobis.frntn.customevents.impl.query.executequery.DatosFacturaQueryCedula_Q_DATOAUFS_NQ47"/>
+        <reference name="bliBuscarFacturaCedula" interface="com.cobiscorp.designer.bli.api.IBLIExecutor" cardinality="1..1" policy="static" target="(bli.id=BLI2427_bli_buscarfacturascedula)" bind="setBliBuscarFacturaCedula" unbind="unsetBliBuscarFacturaCedula"/>
+    </scr:component>
+    <scr:component enabled="true" name="com.cobiscorp.cobis.frntn.customevents.impl.query.executequery.DatosFacturaQueryFecha_Q_DATOTCUF_WG71">
+        <implementation class="com.cobiscorp.cobis.frntn.customevents.impl.query.executequery.DatosFacturaQueryFecha_Q_DATOTCUF_WG71"/>
+        <service servicefactory="false">
+            <provide interface="com.cobiscorp.designer.api.customization.IExecuteQuery"/>
+        </service>
+        <property name="query.id" type="String" value="Q_DATOTCUF_WG71"/>
+        <property name="query.version" type="String" value="1.0.0"/>
+        <property name="service.pid" value="com.cobiscorp.cobis.frntn.customevents.impl.query.executequery.DatosFacturaQueryFecha_Q_DATOTCUF_WG71"/>
+        <reference name="bliBuscarFacturaFechas" interface="com.cobiscorp.designer.bli.api.IBLIExecutor" cardinality="1..1" policy="static" target="(bli.id=BLI4715_bli_buscarfacturasfecha)" bind="setBliBuscarFacturaFechas" unbind="unsetBliBuscarFacturaFechas"/>
+    </scr:component>
+</components>
