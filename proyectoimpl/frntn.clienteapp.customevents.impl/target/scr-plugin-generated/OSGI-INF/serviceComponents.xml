@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0">
+    <scr:component enabled="true" name="com.cobiscorp.cobis.frntn.customevents.impl.queryview.afterleaveinlinerow.ClienteQuery_QV_DN57_WPJ49">
+        <implementation class="com.cobiscorp.cobis.frntn.customevents.impl.queryview.afterleaveinlinerow.ClienteQuery_QV_DN57_WPJ49"/>
+        <service servicefactory="false">
+            <provide interface="com.cobiscorp.designer.api.customization.IGridAfterLeaveInLineRow"/>
+        </service>
+        <property name="queryView.id" type="String" value="QV_DN57_WPJ49"/>
+        <property name="queryView.controlId" type="String" value="QV_DN57_WPJ49"/>
+        <property name="service.pid" value="com.cobiscorp.cobis.frntn.customevents.impl.queryview.afterleaveinlinerow.ClienteQuery_QV_DN57_WPJ49"/>
+    </scr:component>
+    <scr:component enabled="true" name="com.cobiscorp.cobis.frntn.customevents.impl.queryview.rowdeleting.ClienteQuery_QV_DN57_WPJ49">
+        <implementation class="com.cobiscorp.cobis.frntn.customevents.impl.queryview.rowdeleting.ClienteQuery_QV_DN57_WPJ49"/>
+        <service servicefactory="false">
+            <provide interface="com.cobiscorp.designer.api.customization.IGridRowDeleting"/>
+        </service>
+        <property name="queryView.id" type="String" value="QV_DN57_WPJ49"/>
+        <property name="queryView.controlId" type="String" value="QV_DN57_WPJ49"/>
+        <property name="service.pid" value="com.cobiscorp.cobis.frntn.customevents.impl.queryview.rowdeleting.ClienteQuery_QV_DN57_WPJ49"/>
+        <reference name="bliEliminarCliente" interface="com.cobiscorp.designer.bli.api.IBLIExecutor" cardinality="1..1" policy="static" target="(bli.id=BLI1788_bli_eliminarcliente)" bind="setBliEliminarCliente" unbind="unsetBliEliminarCliente"/>
+    </scr:component>
+    <scr:component enabled="true" name="com.cobiscorp.cobis.frntn.customevents.impl.queryview.rowinserting.ClienteQuery_QV_DN57_WPJ49">
+        <implementation class="com.cobiscorp.cobis.frntn.customevents.impl.queryview.rowinserting.ClienteQuery_QV_DN57_WPJ49"/>
+        <service servicefactory="false">
+            <provide interface="com.cobiscorp.designer.api.customization.IGridRowInserting"/>
+        </service>
+        <property name="queryView.id" type="String" value="QV_DN57_WPJ49"/>
+        <property name="queryView.controlId" type="String" value="QV_DN57_WPJ49"/>
+        <property name="service.pid" value="com.cobiscorp.cobis.frntn.customevents.impl.queryview.rowinserting.ClienteQuery_QV_DN57_WPJ49"/>
+        <reference name="bliCrearCliente" interface="com.cobiscorp.designer.bli.api.IBLIExecutor" cardinality="1..1" policy="static" target="(bli.id=BLI3082_bli_crearcliente)" bind="setBliCrearCliente" unbind="unsetBliCrearCliente"/>
+    </scr:component>
+    <scr:component enabled="true" name="com.cobiscorp.cobis.frntn.customevents.impl.queryview.rowupdating.ClienteQuery_QV_DN57_WPJ49">
+        <implementation class="com.cobiscorp.cobis.frntn.customevents.impl.queryview.rowupdating.ClienteQuery_QV_DN57_WPJ49"/>
+        <service servicefactory="false">
+            <provide interface="com.cobiscorp.designer.api.customization.IGridRowUpdating"/>
+        </service>
+        <property name="queryView.id" type="String" value="QV_DN57_WPJ49"/>
+        <property name="queryView.controlId" type="String" value="QV_DN57_WPJ49"/>
+        <property name="service.pid" value="com.cobiscorp.cobis.frntn.customevents.impl.queryview.rowupdating.ClienteQuery_QV_DN57_WPJ49"/>
+        <reference name="bliActualizarCliente" interface="com.cobiscorp.designer.bli.api.IBLIExecutor" cardinality="1..1" policy="static" target="(bli.id=BLI4792_bli_actualizarcliente)" bind="setBliActualizarCliente" unbind="unsetBliActualizarCliente"/>
+    </scr:component>
+</components>
