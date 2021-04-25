@@ -24,7 +24,7 @@ create procedure sp_cliente_g2
    @i_direccion				varchar(200)= null,
    @i_telefono				varchar(10) = null,
    @i_estado				char(1)		= 'V',
-   @i_codigo				varchar(10) = null,
+   @i_codigo				int 		= null,
    @o_codigo              	int      	= null out
 
 as
