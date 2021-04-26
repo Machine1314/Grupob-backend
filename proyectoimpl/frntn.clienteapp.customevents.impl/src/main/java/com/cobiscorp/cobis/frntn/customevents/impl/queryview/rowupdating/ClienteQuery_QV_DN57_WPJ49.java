@@ -19,6 +19,7 @@ import org.apache.felix.scr.annotations.Property;
 import org.apache.felix.scr.annotations.Reference;
 import org.apache.felix.scr.annotations.ReferenceCardinality;
 import org.apache.felix.scr.annotations.Service;
+
 import com.cobiscorp.cobis.commons.domains.log.ILogger;
 import com.cobiscorp.cobis.commons.log.LogFactory;
 import com.cobiscorp.designer.api.DataEntity;
@@ -52,16 +53,15 @@ public class ClienteQuery_QV_DN57_WPJ49 implements IGridRowUpdating {
 		this.bliActualizarCliente = null;
 	}
 	
-	
 	@Override
 	public void rowAction(DataEntity arg0, IGridRowActionEventArgs arg1) {
 		// TODO Auto-generated method stub
 		try {
 			if (logger.isDebugEnabled()) {
 				logger.logDebug("Start rowAction in ClienteQuery_QV_DN57_WPJ49");
-				logger.logDebug("Se ingreso a la opcion Actualizar");
-				bliActualizarCliente.execute(arg1.getDynamicRequest());
+				logger.logDebug("Ingreso a la opcion Actualizar");
 			}
+			bliActualizarCliente.execute(arg1.getDynamicRequest());
 		} catch (Exception ex) {
 			DesignerManagerException.handleException(arg1.getMessageManager(), ex, logger);
 		}

@@ -1,13 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0">
-    <scr:component enabled="true" name="com.cobiscorp.cobis.frntn.customevents.impl.queryview.afterleaveinlinerow.ClienteQuery_QV_DN57_WPJ49">
-        <implementation class="com.cobiscorp.cobis.frntn.customevents.impl.queryview.afterleaveinlinerow.ClienteQuery_QV_DN57_WPJ49"/>
-        <service servicefactory="false">
-            <provide interface="com.cobiscorp.designer.api.customization.IGridAfterLeaveInLineRow"/>
-        </service>
-        <property name="queryView.id" type="String" value="QV_DN57_WPJ49"/>
-        <property name="queryView.controlId" type="String" value="QV_DN57_WPJ49"/>
-        <property name="service.pid" value="com.cobiscorp.cobis.frntn.customevents.impl.queryview.afterleaveinlinerow.ClienteQuery_QV_DN57_WPJ49"/>
-    </scr:component>
     <scr:component enabled="true" name="com.cobiscorp.cobis.frntn.customevents.impl.queryview.rowdeleting.ClienteQuery_QV_DN57_WPJ49">
         <implementation class="com.cobiscorp.cobis.frntn.customevents.impl.queryview.rowdeleting.ClienteQuery_QV_DN57_WPJ49"/>
         <service servicefactory="false">

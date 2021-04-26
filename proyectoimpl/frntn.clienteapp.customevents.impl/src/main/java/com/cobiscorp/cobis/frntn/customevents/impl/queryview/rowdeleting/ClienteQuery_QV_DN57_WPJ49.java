@@ -53,16 +53,16 @@ public class ClienteQuery_QV_DN57_WPJ49 implements IGridRowDeleting {
 		this.bliEliminarCliente = null;
 	}
 	
+	
 	@Override
 	public void rowAction(DataEntity arg0, IGridRowActionEventArgs arg1) {
 		// TODO Auto-generated method stub
 		try {
 			if (logger.isDebugEnabled()) {
 				logger.logDebug("Start rowAction in ClienteQuery_QV_DN57_WPJ49");
-				logger.logDebug("Se ingreso a RowDeleting");
-				
-				bliEliminarCliente.execute(arg1.getDynamicRequest());
+				logger.logDebug("Ingreso a la opcion de eliminar");
 			}
+			bliEliminarCliente.execute(arg1.getDynamicRequest());
 		} catch (Exception ex) {
 			DesignerManagerException.handleException(arg1.getMessageManager(), ex, logger);
 		}
