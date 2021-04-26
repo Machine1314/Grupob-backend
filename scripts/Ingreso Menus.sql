@@ -16,3 +16,11 @@ exec sp_menus_semillero
 	@i_name 						= 'MNU_BTEST2', 
 	@i_description 					= 'MENU BUSQUEDA POR CEDULA', 
 	@i_operacion					='I'
+	
+exec sp_menus_semillero 
+	@i_url 							= 'views/FRNTN/FCTRC/T_FRNTNSYZSPIUW_210/1.0.0/VC_CLIENTEWGH_369210_TASK.html?mode=2', 
+	@i_id_parent 					= @w_id_menu, 
+	@i_name 						= 'MNU_BTEST_CLIENTE', 
+	@i_description 					= 'MENU CLIENTE GRUPOB', 
+	@i_operacion					='I'
+
