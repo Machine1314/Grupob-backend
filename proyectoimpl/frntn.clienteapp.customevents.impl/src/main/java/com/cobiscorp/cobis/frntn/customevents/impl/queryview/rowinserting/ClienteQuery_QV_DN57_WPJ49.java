@@ -53,16 +53,15 @@ public class ClienteQuery_QV_DN57_WPJ49 implements IGridRowInserting {
 		this.bliCrearCliente = null;
 	}
 	
-	
 	@Override
 	public void rowAction(DataEntity arg0, IGridRowActionEventArgs arg1) {
 		// TODO Auto-generated method stub
 		try {
 			if (logger.isDebugEnabled()) {
 				logger.logDebug("Start rowAction in ClienteQuery_QV_DN57_WPJ49");
-				logger.logDebug("Opcion insertar");
-				bliCrearCliente.execute(arg1.getDynamicRequest());
+				logger.logDebug("Ingreso a la opcion crear");
 			}
+			bliCrearCliente.execute(arg1.getDynamicRequest());
 		} catch (Exception ex) {
 			DesignerManagerException.handleException(arg1.getMessageManager(), ex, logger);
 		}
